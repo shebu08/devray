@@ -1,0 +1,144 @@
+/* #carousel{
+    position: absolute;
+    top: 100px;
+    left: 30;
+    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.card{
+    position :absolute;
+  width : 600px;
+  height : 300px;
+  transform-style : preserve-3d;
+  transition : 1s;
+ 
+
+
+}
+  
+.card:nth-child(1){
+    transform : translateX(0) translateZ(0);
+    background-image: url('https://www.techtarget.com/esg-global/wp-content/uploads/2023/07/Infographic-End-to-End-Networking-Visibility-and-Management-1102x716-2.jpg')
+
+}
+  
+.card:nth-child(2){
+    transform  : translateX(-55%) translateZ(-50px) scale(0.8);
+    background-image: url('https://www.techtarget.com/esg-global/wp-content/uploads/2023/07/Infographic-End-to-End-Networking-Visibility-and-Management-1102x716-2.jpg')
+  
+
+}
+  
+.card:nth-child(3){
+    transform :  translateX(55%) translateZ(-50px) scale(0.8);
+  background-image: url('https://www.techtarget.com/esg-global/wp-content/uploads/2023/07/Infographic-End-to-End-Networking-Visibility-and-Management-1102x716-2.jpg');
+
+}
+.car{
+  align-items: center;
+  flex-direction: column;
+}
+   */
+
+   /* --------------------------------------------New Add ______________________________________________ */
+
+   .body2 {
+    background: #ffffff;
+    padding: 20px 0;
+    font: 15px/20px Arial, sans-serif;
+    background-image: url('https://cyber.olympiadsuccess.com/assets/images/cyber_square/cyber_topic_63.jpg');
+  }
+  
+  .container1 {
+    margin: 0 auto;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    perspective: 3000px;
+  }
+  
+  .carousel1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .carousel1 div {
+    transform-style: preserve-3d;
+    
+  }
+  
+  .item1 {
+    display: block;
+    position: absolute;
+    background: #a99a9a00;
+    width: 450;
+    height: 300px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+    transition: transform 1s;
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+  }
+  .a .item1 {
+    /* background: #ffffff; */
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+  }
+  .b .item1 {
+    background: #ffffff00;
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(250px)  rotateY(-120deg);
+  }
+  .c .item1 {
+    background: #ffffff00;
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+  }
+  .d .item1 {
+    background: #f2642200;
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+  } 
+  .e .item1 {
+    background: #ffffff00;
+  }
+  .f {
+    transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+  }
+  .f .item1 {
+    background: #8c623900;
+  }
+  
+  .next, .prev {
+    color: #444;
+    position: absolute;
+    top: 100px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+    top: 104px;
+    box-shadow: 0 1px 0 #999;
+  }
+  .next { right: 5em; }
+  .prev { left: 5em; }
